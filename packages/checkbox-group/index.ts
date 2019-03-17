@@ -22,15 +22,15 @@ VantComponent({
   },
 
   watch: {
-    value(value) {
-      const children = this.getRelationNodes('../checkbox/index');
+    value(value: any) {
+      const children: Weapp.Component[] = this.getRelationNodes('../checkbox/index');
       children.forEach(child => {
         child.set({ value: value.indexOf(child.data.name) !== -1 });
       });
     },
 
     disabled(disabled: boolean) {
-      const children = this.getRelationNodes('../checkbox/index');
+      const children: Weapp.Component[] = this.getRelationNodes('../checkbox/index');
       children.forEach(child => {
         child.set({ disabled: disabled || child.data.disabled });
       });

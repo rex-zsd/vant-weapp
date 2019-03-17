@@ -11,12 +11,16 @@ VantComponent({
   classes: ['icon-class', 'label-class'],
 
   props: {
-    name: null,
     value: null,
     disabled: Boolean,
-    labelDisabled: Boolean,
+    useIconSlot: Boolean,
+    checkedColor: String,
     labelPosition: String,
-    checkedColor: String
+    labelDisabled: Boolean,
+    shape: {
+      type: String,
+      value: 'round'
+    }
   },
 
   methods: {
@@ -26,8 +30,10 @@ VantComponent({
       instance.$emit('change', value);
     },
 
-    onChange(event: Weapp.Event) {
-      this.emitChange(event.detail.value);
+    toggle() {
+      if (!this.data.disabled) {
+        this.emitChange(this.data.name);
+      }
     },
 
     onClickLabel() {

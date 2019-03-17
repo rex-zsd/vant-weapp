@@ -24,7 +24,7 @@ VantComponent({
   },
 
   methods: {
-    emitChange(value) {
+    emitChange(value: any) {
       const parent = this.getRelationNodes('../checkbox-group/index')[0];
       if (parent) {
         this.setParentValue(parent, value);
@@ -46,7 +46,7 @@ VantComponent({
       }
     },
 
-    setParentValue(parent, value) {
+    setParentValue(parent: Weapp.Component, value: any) {
       const parentValue = parent.data.value.slice();
       const { name } = this.data;
 

@@ -66,21 +66,9 @@
 | disabled | 是否为禁用状态 | `Boolean` | `false` |
 | label-disabled | 是否禁用文本内容点击 | `Boolean` | `false` |
 | label-position | 文本位置，可选值为 `left` | `String` | `right` |
+| shape | 形状，可选值为 `round` `square` | `String` | `round` |
+| use-icon-slot | 是否使用 icon slot | `Boolean` | `false` |
 | checked-color | 选中状态颜色 | `String` | `#1989fa` |
-
-### Radio Event
-
-| 事件名 | 说明 | 回调参数 |
-|-----------|-----------|-----------|
-| bind:change | 当绑定值变化时触发的事件 | 当前选中项的 name |
-
-### Radio 外部样式类
-
-| 类名 | 说明 |
-|-----------|-----------|
-| custom-class | 根节点样式类 |
-| icon-class | 图标样式类 |
-| label-class | 描述信息样式类 |
 
 ### RadioGroup API
 
@@ -90,20 +78,35 @@
 | value | 当前选中项的 name | `any` | - |
 | disabled | 是否禁用所有单选框 | `Boolean` | `false` |
 
+### Radio Event
+
+| 事件名 | 说明 | 回调参数 |
+|-----------|-----------|-----------|
+| bind:change | 当绑定值变化时触发的事件 | 当前选中项的 name |
+
 ### RadioGroup Event
 
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
 | bind:change | 当绑定值变化时触发的事件 | 当前选中项的 name |
 
+### Radio Slot
+
+| 名称 | 说明 |
+|-----------|-----------|
+| - | 自定义文本 |
+| icon | 自定义图标 |
+
+### Radio 外部样式类
+
+| 类名 | 说明 |
+|-----------|-----------|
+| custom-class | 根节点样式类 |
+| icon-class | 图标样式类 |
+| label-class | 描述信息样式类 |
+
 ### RadioGroup 外部样式类
 
 | 类名 | 说明 |
 |-----------|-----------|
 | custom-class | 根节点样式类 |
-
-### 更新日志
-
-| 版本 | 类型 | 内容 |
-|-----------|-----------|-----------|
-| 0.3.4 | feature | 新增组件 |

@@ -13,13 +13,13 @@
 
   &__icon {
     display: block;
-    font-size: 14px;
     width: @checkbox-size;
     height: @checkbox-size;
+    font-size: 14px;
     color: transparent;
     text-align: center;
-    box-sizing: border-box;
     border: 1px solid @checkbox-border-color;
+    box-sizing: border-box;
     transition: @checkbox-transition-duration;
 
     &--round {
@@ -28,13 +28,13 @@
 
     &--checked {
       color: @white;
-      border-color: @checkbox-checked-icon-color;
       background-color: @checkbox-checked-icon-color;
+      border-color: @checkbox-checked-icon-color;
     }
 
     &--disabled {
-      border-color: @checkbox-disabled-icon-color;
       background-color: @checkbox-disabled-background-color;
+      border-color: @checkbox-disabled-icon-color;
     }
 
     &--disabled&--checked {
@@ -43,8 +43,8 @@
   }
 
   &__label {
-    color: @checkbox-label-color;
     margin-left: @checkbox-label-margin;
+    color: @checkbox-label-color;
 
     &--left {
       float: left;

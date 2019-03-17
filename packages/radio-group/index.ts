@@ -21,15 +21,15 @@ VantComponent({
   },
 
   watch: {
-    value(value) {
-      const children = this.getRelationNodes('../radio/index');
+    value(value: any) {
+      const children: Weapp.Component[] = this.getRelationNodes('../radio/index');
       children.forEach(child => {
         child.set({ value });
       });
     },
 
     disabled(disabled: boolean) {
-      const children = this.getRelationNodes('../radio/index');
+      const children: Weapp.Component[] = this.getRelationNodes('../radio/index');
       children.forEach(child => {
         child.set({ disabled: disabled || child.data.disabled });
       });
