@@ -6,11 +6,12 @@
 />
 <van-transition
   show="{{ show }}"
-  custom-style="z-index: {{ zIndex }}"
+  custom-style="z-index: {{ zIndex }};{{ styles.container }}"
   custom-class="van-toast__container"
 >
   <view
     class="van-toast van-toast--{{ type === 'text' ? 'text' : 'icon' }} van-toast--{{ position }}"
+    style="{{ styles.root }}"
     catch:touchmove="noop"
   >
     <!-- text only -->
@@ -24,7 +25,7 @@
         type="{{ loadingType }}"
         custom-class="van-toast__loading"
       />
-      <van-icon wx:else class="van-toast__icon" name="{{ type }}" />
+      <van-icon wx:else style="{{ styles.icon }}" name="{{ type }}" />
       <text wx:if="{{ message }}" class="van-toast__text">{{ message }}</text>
     </block>
 

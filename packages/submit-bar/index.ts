@@ -1,15 +1,14 @@
 import { VantComponent } from '../common/component';
 import { safeArea } from '../mixins/safe-area';
 import { Weapp } from 'definitions/weapp';
+import * as styles from './styles';
 
 VantComponent({
   mixins: [safeArea()],
 
-  classes: [
-    'bar-class',
-    'price-class',
-    'button-class'
-  ],
+  classes: ['bar-class', 'price-class', 'button-class'],
+
+  styles,
 
   props: {
     tip: {

@@ -103,3 +103,14 @@
 | 类名 | 说明 |
 |-----------|-----------|
 | custom-class | 根节点样式类 |
+
+### 主题定制
+
+| 参数 | 说明 | 默认值 |
+|-----------|-----------|-----------|
+| tagDefaultColor | type 为 default 时主颜色 | #999 |
+| tagDanderColor | type 为 danger 时主颜色 | #ee0a24 |
+| tagPrimaryColor | type 为 primary 时主颜色 | #1989fa |
+| tagSuccessColor | type 为 success 时主颜色 | #07c160 |
+| tagWarningColor | type 为 warning 时主颜色 | #ff976a |
+| tagPlainBackgroundColor | 为空心样式时背景颜色 | #fff |

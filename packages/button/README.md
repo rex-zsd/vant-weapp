@@ -146,3 +146,25 @@
 |-----------|-----------|
 | custom-class | 根节点样式类 |
 | loading-class | 加载图标样式类 |
+
+### 主题定制
+
+| 参数 | 说明 | 默认值 |
+|-----------|-----------|-----------|
+| buttonDefaultColor | 图标大小 | #333 |
+| buttonDefaultBackgroundColor | 边框颜色 | #fff |
+| buttonDefaultBorderColor | 过渡时长 | #eee |
+| buttonPrimaryColor | 选中状态图标颜色 | #fff |
+| buttonPrimaryBackgroundColor | 禁用状态图标背景色 | #07c160 |
+| buttonPrimaryBorderColor | 禁用状态图标颜色 | #07c160 |
+| buttonInfoColor | 文本颜色 | #fff |
+| buttonInfoBackgroundColor | 文本与图标距离 | #1989fa |
+| buttonInfoBorderColor | 禁用状态文本颜色 | #1989fa |
+| buttonDangerColor | 禁用状态文本颜色 | #fff |
+| buttonDangerBackgroundColor | 禁用状态文本颜色 | #ee0a24 |
+| buttonDangerBorderColor | 禁用状态文本颜色 | #ee0a24 |
+| buttonWarningColor | 禁用状态文本颜色 | #fff |
+| buttonWarningBackgroundColor | 禁用状态文本颜色 | #ff976a |
+| buttonWarningBorderColor | 禁用状态文本颜色 | #ff976a |
+| buttonRoundBorderRadius | 禁用状态文本颜色 | 10em |
+| buttonBorderRadius | 禁用状态文本颜色 | 2px |

@@ -1,9 +1,9 @@
 <wxs src="../wxs/utils.wxs" module="utils" />
 
-<view class="van-submit-bar custom-class">
+<view class="van-submit-bar custom-class" style="{{ styles.root }}">
   <slot name="top" />
 
-  <view class="van-submit-bar__tip">
+  <view class="van-submit-bar__tip" style="{{ styles.tip }}">
     <van-icon
       wx:if="{{ tipIcon }}"
       size="12px"
@@ -16,12 +16,12 @@
     <slot name="tip" />
   </view>
 
-  <view class="bar-class {{ utils.bem('submit-bar__bar', { safe: safeAreaInsetBottom && isIPhoneX }) }}">
+  <view class="bar-class {{ utils.bem('submit-bar__bar', { safe: safeAreaInsetBottom && isIPhoneX }) }}" style="{{ styles.bar }}">
     <slot />
-    <view wx:if="{{ hasPrice }}" class="van-submit-bar__text">
+    <view wx:if="{{ hasPrice }}" class="van-submit-bar__text" style="{{ styles.text }}">
       <text>{{ label || '合计：' }}</text>
-      <text class="van-submit-bar__price price-class">
-        <text class="van-submit-bar__currency">{{ currency }} </text>
+      <text class="price-class" style="{{ styles.price }}">
+        <text style="{{ styles.currency }}">{{ currency }} </text>
         <text>{{ priceStr }}</text>
       </text>
       <text class="van-submit-bar__suffix-label">{{ suffixLabel }}</text>
@@ -32,7 +32,7 @@
       type="{{ buttonType }}"
       loading="{{ loading }}"
       disabled="{{ disabled }}"
-      class="van-submit-bar__button"
+      style="{{ styles.button }}"
       custom-class="button-class"
       bind:click="onSubmit"
     >

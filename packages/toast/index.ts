@@ -1,4 +1,5 @@
 import { VantComponent } from '../common/component';
+import * as styles from './styles';
 
 VantComponent({
   props: {
@@ -23,6 +24,8 @@ VantComponent({
       value: 'middle'
     }
   },
+
+  styles,
 
   methods: {
     // for prevent touchmove

@@ -185,3 +185,17 @@ Page({
 | 事件名 | 说明 | 回调参数 |
 |-----------|-----------|-----------|
 | bind:change | 当绑定值变化时触发的事件 | 当前选中项的 name |
+
+### 主题定制
+
+| 参数 | 说明 | 默认值 |
+|-----------|-----------|-----------|
+| radioSize | 图标大小 | 20px |
+| radioBorderColor | 边框颜色 | #e5e5e5 |
+| radioTransitionDuration | 过渡时长 | 0.2s |
+| radioCheckedIconColor | 选中状态图标颜色 | #1989fa |
+| radioDisabledBackgroundColor | 禁用状态图标背景色 | #eee |
+| radioDisabledIconColor | 禁用状态图标颜色 | #c9c9c9 |
+| radioLabelColor | 文本颜色 | #333 |
+| radioLabelMargin | 文本与图标距离 | 10px |
+| radioDisabledLabelColor | 禁用状态文本颜色 | #c9c9c9 |

@@ -10,7 +10,8 @@
   line-height: 42px;
   text-align: center;
   vertical-align: middle;
-  border-radius: @button-border-radius;
+  border-style: solid;
+  border-width: 1px;
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
 
@@ -40,56 +41,6 @@
 
   &--unclickable::after {
     display: none;
-  }
-
-  &--default {
-    color: @button-default-color;
-    background-color: @button-default-background-color;
-    border: 1px solid @button-default-border-color;
-  }
-
-  &--primary {
-    color: @button-primary-color;
-    background-color: @button-primary-background-color;
-    border: 1px solid @button-primary-border-color;
-  }
-
-  &--info {
-    color: @button-info-color;
-    background-color: @button-info-background-color;
-    border: 1px solid @button-info-border-color;
-  }
-
-  &--danger {
-    color: @button-danger-color;
-    background-color: @button-danger-background-color;
-    border: 1px solid @button-danger-border-color;
-  }
-
-  &--warning {
-    color: @button-warning-color;
-    background-color: @button-warning-background-color;
-    border: 1px solid @button-warning-border-color;
-  }
-
-  &--plain {
-    background-color: @white;
-
-    &.van-button--primary {
-      color: @button-primary-background-color;
-    }
-
-    &.van-button--info {
-      color: @button-info-background-color;
-    }
-
-    &.van-button--danger {
-      color: @button-danger-background-color;
-    }
-
-    &.van-button--warning {
-      color: @button-warning-background-color;
-    }
   }
 
   &--large {
@@ -127,10 +78,6 @@
   &--block {
     display: block;
     width: 100%;
-  }
-
-  &--round {
-    border-radius: @button-round-border-radius;
   }
 
   &--square {

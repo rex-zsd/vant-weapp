@@ -246,3 +246,17 @@ Page({
 | 方法名 | 参数 | 返回值 | 介绍 |
 |-----------|-----------|-----------|-------------|
 | toggle | - | - | 切换选中状态 |
+
+### 主题定制
+
+| 参数 | 说明 | 默认值 |
+|-----------|-----------|-----------|
+| checkboxSize | 图标大小 | 20px |
+| checkboxBorderColor | 边框颜色 | #e5e5e5 |
+| checkboxTransitionDuration | 过渡时长 | 0.2s |
+| checkboxSize | 选中状态图标颜色 | #1989fa |
+| checkboxDisabledBackgroundColor | 禁用状态图标背景色 | #eee |
+| checkboxDisabledIconColor | 禁用状态图标颜色 | #c9c9c9 |
+| checkboxLabelColor | 文本颜色 | #333 |
+| checkboxLabelMargin | 文本与图标距离 | 10px |
+| checkboxDisabledLabelColor | 禁用状态文本颜色 | #c9c9c9 |

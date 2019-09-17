@@ -1,5 +1,6 @@
 import { VantComponent } from '../common/component';
 import { addUnit } from '../common/utils';
+import * as styles from './styles';
 
 function emit(target: WechatMiniprogram.Component.TrivialInstance, value: boolean | any[]) {
   target.$emit('input', value);
@@ -23,11 +24,24 @@ VantComponent({
   classes: ['icon-class', 'label-class'],
 
   props: {
-    value: Boolean,
-    disabled: Boolean,
+    value: {
+      type: Boolean,
+      observer() {
+        this.updateStyles();
+      }
+    },
+    disabled: {
+      type: Boolean,
+      observer() {
+        this.updateStyles();
+      }
+    },
     useIconSlot: Boolean,
     checkedColor: String,
-    labelPosition: String,
+    labelPosition: {
+      type: String,
+      value: 'right'
+    },
     labelDisabled: Boolean,
     shape: {
       type: String,
@@ -38,6 +52,8 @@ VantComponent({
       observer: 'setSizeWithUnit'
     }
   },
+
+  styles,
 
   data: {
     sizeWithUnit: '20px'

@@ -1,6 +1,7 @@
 import { basic } from '../mixins/basic';
 import { observe } from '../mixins/observer/index';
 import { VantComponentOptions, CombinedComponentInstance } from 'definitions/index';
+import { themeMixin, themeRelationMixin, themeChildRelation } from '../mixins/theme';
 
 function mapKeys(source: object, target: object, map: object) {
   Object.keys(map).forEach(key => {
@@ -47,6 +48,18 @@ function VantComponent<Data, Props, Methods>(
   // add default behaviors
   options.behaviors = options.behaviors || [];
   options.behaviors.push(basic);
+
+  const hasStyles = vantOptions.styles != null && Object.keys(vantOptions.styles).length > 0;
+  const isThemeProvider = Object.keys(options.relations || {}).indexOf('themeParent') > -1;
+
+  if (hasStyles || isThemeProvider) {
+    options.behaviors.push(themeRelationMixin);
+  }
+
+  if (hasStyles) {
+    options.behaviors.push(themeMixin(vantOptions.styles));
+    options.relations = Object.assign(options.relations || {}, themeChildRelation);
+  }
 
   // map field to form-field behavior
   if (vantOptions.field) {

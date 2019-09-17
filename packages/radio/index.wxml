@@ -3,6 +3,7 @@
 <view class="van-radio custom-class">
   <view
     wx:if="{{ labelPosition === 'left' }}"
+    style="{{ styles.label }}"
     class="label-class {{ utils.bem('radio__label', [labelPosition, { disabled }]) }}"
     bindtap="onClickLabel"
   >
@@ -13,14 +14,16 @@
     <van-icon
       wx:else
       name="success"
+      size="0.8em"
       class="{{ utils.bem('radio__icon', [shape, { disabled, checked: value === name }]) }}"
-      style="{{ checkedColor && !disabled && value === name ? 'border-color:' + checkedColor + '; background-color:' + checkedColor : '' }}"
+      style="{{ styles.icon }};{{ checkedColor && !disabled && value === name ? 'border-color:' + checkedColor + '; background-color:' + checkedColor : '' }}"
       custom-class="icon-class"
       custom-style="line-height: 20px;"
     />
   </view>
   <view
     wx:if="{{ labelPosition === 'right' }}"
+    style="{{ styles.label }}"
     class="label-class {{ utils.bem('radio__label', [labelPosition, { disabled }]) }}"
     bindtap="onClickLabel"
   >

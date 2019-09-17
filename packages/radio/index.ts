@@ -1,5 +1,6 @@
 import { VantComponent } from '../common/component';
 import { Weapp } from 'definitions/weapp';
+import * as styles from './styles';
 
 VantComponent({
   field: true,
@@ -32,6 +33,8 @@ VantComponent({
       value: 'round'
     }
   },
+
+  styles,
 
   methods: {
     emitChange(value: boolean) {

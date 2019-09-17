@@ -1,6 +1,7 @@
 import { VantComponent } from '../common/component';
 import { button } from '../mixins/button';
 import { openType } from '../mixins/open-type';
+import * as styles from './styles';
 
 VantComponent({
   mixins: [button, openType],
@@ -11,14 +12,31 @@ VantComponent({
     style: ''
   },
 
+  styles,
+
   props: {
     icon: String,
-    plain: Boolean,
+    plain: {
+      type: Boolean,
+      observer() {
+        this.updateStyles();
+      }
+    },
     block: Boolean,
-    round: Boolean,
+    round: {
+      type: Boolean,
+      observer() {
+        this.updateStyles();
+      }
+    },
     square: Boolean,
     loading: Boolean,
-    hairline: Boolean,
+    hairline: {
+      type: Boolean,
+      observer() {
+        this.updateStyles();
+      }
+    },
     disabled: Boolean,
     loadingText: String,
     loadingType: {
@@ -27,7 +45,10 @@ VantComponent({
     },
     type: {
       type: String,
-      value: 'default'
+      value: 'default',
+      observer() {
+        this.updateStyles();
+      }
     },
     size: {
       type: String,

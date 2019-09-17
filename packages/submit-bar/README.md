@@ -109,3 +109,22 @@
 | price-class | 价格样式类 |
 | button-class | 按钮样式类 |
 | bar-class | 订单栏样式类 |
+
+### 主题定制
+
+| 参数 | 说明 | 默认值 |
+|-----------|-----------|-----------|
+| submitBarZIndex | 层级 | 100 |
+| submitBarTipPadding | 提示文案内边距 | 10px |
+| submitBarTipColor | 提示文案颜色 | #f56723 |
+| submitBarTipFontSize | 提示文案字体大小 | 12px |
+| submitBarTipLineHeight | 提示文案行高 | 1.5 |
+| submitBarTipBackgroundColor | 提示文案背景颜色 | #fff7cc |
+| submitBarHeight | 高度 | 50px |
+| submitBarTextFontSize | 文字大小 | 14px |
+| submitBarBackgroundColor | 背景色 | #fff |
+| submitBarTextColor | 文字颜色 | #333 |
+| submitBarPriceColor | 价格文字颜色 | #ee0a24 |
+| submitBarPriceFontSize | 价格文字大小 | 18px |
+| submitBarCurrencyFontSize | 货币符号文字大小 | 14px |
+| submitBarButtonWidth | 按钮宽度 | 110px |
