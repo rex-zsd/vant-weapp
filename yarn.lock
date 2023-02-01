@@ -2367,10 +2367,10 @@
     eslint-plugin-import "^2.24.0"
     eslint-plugin-vue "^7.18.0"
 
-"@vant/icons@^1.7.1":
-  version "1.7.3"
-  resolved "https://registry.npmmirror.com/@vant/icons/-/icons-1.7.3.tgz#e51b46065cfde445617401ebe309a33b62a29725"
-  integrity sha512-tW4EqzxN4kXw1rnlnQJQHofEifPbt/gECOWiibomht8QLyvoGuE4iUmDFS288dJ07ZjuTy0bhdABj0SENo2fmQ==
+"@vant/icons@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmmirror.com/@vant/icons/-/icons-2.0.1.tgz#058eba7ba27deb1aaa0cb6dc5c7b2b2dbc15edb7"
+  integrity sha512-KYzUOSKC/h58ubiCwS6oXhqOBHihtBSTrpCb7o0nl82fKQcRCoaFwGjg5SlnwUNuWA7Wab3/g1UA+g+26LE28A==
 
 "@vant/markdown-vetur@^2.2.0":
   version "2.2.0"
